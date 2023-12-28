@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <title>معرض العقارات بالمغرب</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<div>
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body py-2 pe-3 border-end" href=""><small></small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small></small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small></small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small></small></a>
+                    <a class="text-body py-2 ps-3" href=""><small></small></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@marocexpo.org</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+212(5) 37 68 36 14</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+      <a href="index.html" class="navbar-brand p-0">
+          <h1 class="m-0 text-uppercase text-primary"><img src="img/logo-MPE-1.jpg"></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0 me-n3" dir="rtl">
+              <a href="index.html" class="nav-item nav-link ">الصفحة الرئيسية</a>
+              <a href="about.html" class="nav-item nav-link">تقديم</a>
+              <a href="events.html" class="nav-item nav-link">قائمة المعارض</a>
+              <a href="Registration.html" class="nav-item nav-link active">تسجيل</a>
+              <a href="references.html" class="nav-item nav-link">مراجع</a>
+              <a href="quote.html" class="nav-item nav-link">إستشارة مجانية</a>
+              <a href="partners.html" class="nav-item nav-link">الشركاء</a>
+              <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+          </div>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">تسجيل</h1>
+                <a href="index.html">الصفحة الرئيسية</a>
+                <i class="bi bi-person-check text-primary px-2"></i>
+                <a href="#">تسجيل</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    
+<!--registration form start -->
+<!-- bootstrap css -->
+    <form id="signUpForm" action="#!">
+        <!-- start step indicators -->
+        <div class="form-header d-flex mb-4" dir="rtl">
+            <span class="stepIndicator">معلومات شخصية</span>
+            <span class="stepIndicator">معلومات الاتصال</span>
+            <span class="stepIndicator">معلومات الشراء</span>
+            <span class="stepIndicator">التفضيلات والمناطق</span>
+        </div>
+        <!-- end step indicators -->
+    
+                <!-- step one -->
+                <div class="step" dir="rtl">
+                  <div class="mb-3">
+                    <label for="sex">الجنس</label>
+                    <select id="sex" class="form-control browser-default custom-select" required>
+                      <option value="" selected=""></option>
+                      <option value="male">ذكر</option>
+                      <option value="Femelle">أنثى</option>
+                    </select>
+                  </div>
+                    <div class="mb-3">
+                        <input type="text" placeholder="الاسم الأول" oninput="this.className = ''" name="first name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" placeholder="اسم العائلة" oninput="this.className = ''" name="last Name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="sex">العمر</label>
+                      <select id="sex" class="form-control browser-default custom-select" required>
+                        <option value="" style="display:none;" selected></option>
+                        <option value="Moins de 35 ans">أقل من 35 سنة</option>
+                        <option value="35 à 49"> بين 35 و49 سنة</option>
+                        <option value="50 à 60">بين 50 و60 سنة</option>
+                        <option value="plus de 60 ans">أكثر من 60 سنة</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="sex">المهنة</label>
+                      <select id="sex" class="form-control browser-default custom-select">
+                          <option value="" style="display:none;" selected></option>
+                          <option value="Senior Executive">مدير تنفيذي </option>
+                          <option value="Employee">موظف</option>
+                          <option value="Student">طالب</option>
+                          <option value="Inactive">عاطل</option>
+                          <option value="Housewife">ربة منزل</option>
+                          <option value="Liberal Profession">مهنة حرة</option>
+                          <option value="Retired">متقاعد</option>
+                          <option value="Other...">أخر</option>
+                      </select>
+                    </div>
+                </div>
+               <!-- step two -->
+<div class="step" dir="rtl">
+  <div class="mb-3">
+    <label for="tel">رقم الهاتف</label>
+    <input type="tel" name="phone" class="form-control" id="tel" placeholder="أدخل رقم هاتفك" dir="rtl" required>
+</div>      
+<div class="mb-3">
+<label for="pass">البريد الإلكتروني</label>
+<input type="email" name="Email" class="form-control" id="email" placeholder="أدخل عنوان بريدك الإلكتروني" required>
+</div>
+<div class="mb-3">
+<label for="Pays">البلد</label>
+<select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control form-control" id="widhtt" name="pays" aria-invalid="false" aria-required="true" required>
+    <option value="" style="display:none;" selected></option>
+    <option value="Afghanistan">أفغانستان</option>
+    <option value="South Africa">جنوب أفريقيا</option>
+    <option value="Akrotiri">أكروتيري</option>
+    <option value="Albania">ألبانيا</option>
+    <option value="Algeria">الجزائر</option>
+    <option value="Germany">ألمانيا</option>
+    <option value="Andorra">أندورا</option>
+    <option value="Angola">أنغولا</option>
+    <option value="Anguilla">أنغويلا</option>
+    <option value="Antarctic">القارة القطبية الجنوبية</option>
+    <option value="Antigua and Barbuda">أنتيغوا وبربودا</option>
+    <option value="Netherlands Antilles">جزر الأنتيل الهولندية</option>
+    <option value="Saudi Arabia">المملكة العربية السعودية</option>
+    <option value="Arctic Ocean">المحيط القطبي الشمالي</option>
+    <option value="Argentina">الأرجنتين</option>
+    <option value="Armenia">أرمينيا</option>
+    <option value="Aruba">أروبا</option>
+    <option value="Ashmore and Cartier Islands">جزر أشمور وكارتييه</option>
+    <option value="Atlantic Ocean">المحيط الأطلسي</option>
+    <option value="Australia">أستراليا</option>
+    <option value="Austria">النمسا</option>
+    <option value="Azerbaijan">أذربيجان</option>
+    <option value="Bahamas">جزر البهاما</option>
+    <option value="Bahrain">البحرين</option>          
+    <option value="Bangladesh">بنجلاديش</option>
+    <option value="Barbados">بربادوس</option>
+    <option value="Belau">بيلو</option>
+    <option value="Belgium">بلجيكا</option>
+    <option value="Belize">بليز</option>
+    <option value="Benign">بينين</option>
+    <option value="Bermuda">برمودا</option>
+    <option value="Bhutan">بوتان</option>
+    <option value="Belarus">بيلاروس</option>
+    <option value="Burma">بورما</option>
+    <option value="Bolivia">بوليفيا</option>
+    <option value="Bosnia and Herzegovina">البوسنة والهرسك</option>
+    <option value="Botswana">بوتسوانا</option>
+    <option value="Brazil">البرازيل</option>
+    <option value="Brunei">بروناي</option>
+    <option value="Bulgaria">بلغاريا</option>
+    <option value="Burkina Faso">بوركينا فاسو</option>
+    <option value="Burundi">بوروندي</option>
+    <option value="Cambodia">كمبوديا</option>
+    <option value="Cameroon">الكاميرون</option>
+    <option value="Canada">كندا</option>
+    <option value="Green cap">الرأس الأخضر</option>
+    <option value="Chile">تشيلي</option>
+    <option value="China">الصين</option>
+    <option value="Cyprus">قبرص</option>
+    <option value="Clipperton Island">جزيرة كليبيرتون</option>
+    <option value="Colombia">كولومبيا</option>
+    <option value="Comoros">جزر القمر</option>
+    <option value="Congo">الكونغو</option>
+    <option value="Coral Sea Islands">جزر البحر الأحمر</option>
+    <option value="South Korea">كوريا الجنوبية</option>
+    <option value="Costa Rica">كوستاريكا</option>
+    <option value="Ivory Coast">ساحل العاج</option>
+    <option value="Croatia">كرواتيا</option>
+    <option value="Cuba">كوبا</option>
+    <option value="Denmark">الدانمارك</option>
+    <option value="Dhekelia">ديكيليا</option>
+    <option value="Djibouti">جيبوتي</option>
+    <option value="Dominique">دومينيكا</option>
+    <option value="Egypt">مصر</option>
+    <option value="United Arab Emirates">الإمارات العربية المتحدة</option>
+    <option value="Ecuador">الإكوادور</option>
+    <option value="Eritrea">إريتريا</option>
+    <option value="Spain">إسبانيا</option>
+    <option value="Estonia">إستونيا</option>
+    <option value="United States">الولايات المتحدة</option>
+    <option value="Ethiopia">إثيوبيا</option>
+    <option value="the former Yugoslav Republic of Macedonia">جمهورية مقدونيا اليوغوسلافية السابقة</option>
+    <option value="Finland">فنلندا</option>
+    <option value="La France">فرنسا</option>
+    <option value="Gabon">الغابون</option>
+    <option value="Gambia">غامبيا</option>
+    <option value="Gaza Strip">قطاع غزة</option>
+    <option value="Georgia">جورجيا</option>
+    <option value="Ghana">غانا</option>
+    <option value="Gibraltar">جبل طارق</option>
+    <option value="Greece">اليونان</option>
+    <option value="Grenade">جرينادا</option>
+    <option value="Greenland">غرينلاند</option>
+    <option value="Guam">غوام</option>
+    <option value="Guatemala">غواتيمالا</option>
+    <option value="Guernsey">غيرنسي</option>
+    <option value="Guinea">غينيا</option>
+    <option value="Equatorial Guinea">غينيا الاستوائية</option>
+    <option value="Guinea-Bissau">غينيا بيساو</option>
+    <option value="Guyana">غيانا</option>
+    <option value="Haiti">هايتي</option>
+    <option value="Honduras">هندوراس</option>
+    <option value="Hong Kong">هونغ كونغ</option>
+    <option value="Hungary">هنغاريا</option>
+    <option value="Bouvet Island">جزيرة بوفيه</option>
+    <option value="Christmas Island">جزيرة الكريسماس</option>
+    <option value="Norfolk Island">جزيرة نورفولك</option>
+    <option value="Cayman Islands">جزر الكايمن</option>
+    <option value="Cook Islands">جزر كوك</option>
+    <option value="Islands of Cocos (Keeling)">جزر كوكوس (كيلينغ)</option>
+    <option value="Falkland Islands">جزر فوكلاند</option>
+    <option value="Faroe Islands">جزر فارو</option>
+    <option value="Fiji Islands">جزر فيجي</option>
+    <option value="South Georgia Islands and South Sandwich">جزر جورجيا الجنوبية وجزر ساندويتش الجنوبية</option>
+    <option value="Heard and McDonald Islands">جزر هيرد وماكدونالد</option>
+    <option value="Marshall Islands">جزر مارشال</option>
+    <option value="Pitcairn Islands">جزر بيتكيرن</option>
+    <option value="Solomon Islands">جزر سليمان</option>
+    <option value="Svalbard and Jan Mayen Islands">جزر سفالبارد وجان ماين</option>
+    <option value="Turks and Caicos Islands">جزر تركس وكايكوس</option>
+    <option value="US Virgin Islands">جزر العذراء الأمريكية</option>
+    <option value="British Virgin Islands">جزر العذراء البريطانية</option>
+    <option value="India">الهند</option>
+    <option value="Indian Ocean">المحيط الهندي</option>
+    <option value="Indonesia">إندونيسيا</option>
+    <option value="Iran">إيران</option>
+    <option value="Iraq">العراق</option>
+    <option value="Ireland">أيرلندا</option>
+    <option value="Iceland">آيسلندا</option>
+    <option value="Israel">إسرائيل</option>
+    <option value="Italy">إيطاليا</option>
+    <option value="Jamaica">جامايكا</option>
+    <option value="Jan Mayen">جان ماين</option>
+    <option value="Japan">اليابان</option>
+    <option value="Jersey">جيرسي</option>
+    <option value="Jordan">الأردن</option>
+    <option value="Kazakhstan">كازاخستان</option>
+    <option value="Kenya">كينيا</option>
+    <option value="Kyrgyzstan">قيرغيزستان</option>
+    <option value="Kiribati">كيريباتي</option>
+    <option value="Kuwait">الكويت</option>
+    <option value="Laos">لاوس</option>
+    <option value="Lesotho">ليسوتو</option>
+    <option value="Latvia">لاتفيا</option>
+    <option value="Lebanon">لبنان</option>
+    <option value="Liberia">ليبيريا</option>
+    <option value="Libya">ليبيا</option>
+    <option value="Liechtenstein">ليختنشتاين</option>
+    <option value="Lithuania">ليتوانيا</option>
+    <option value="Luxembourg">لوكسمبورغ</option>
+    <option value="Macao">ماكاو</option>
+    <option value="Madagascar">مدغشقر</option>
+    <option value="Malaysia">ماليزيا</option>
+    <option value="Malawi">ملاوي</option>
+    <option value="Maldives">المالديف</option>
+    <option value="Mali">مالي</option>
+    <option value="Malta">مالطا</option>
+    <option value="Man, Isle of">جزيرة مان</option>
+    <option value="Northern Marianas">جزر ماريانا الشمالية</option>
+    <option value="Morocco">المغرب</option>
+    <option value="Maurice">موريشيوس</option>
+    <option value="Mauritania">موريتانيا</option>
+    <option value="Mayotte">مايوت</option>
+    <option value="Mexico">المكسيك</option>
+    <option value="Micronesia">ميكرونيزيا</option>
+    <option value="Moldova">مولدوفا</option>
+    <option value="Monaco">موناكو</option>
+    <option value="World">العالم</option>
+    <option value="Mongolia">منغوليا</option>
+    <option value="Montenegro">الجبل الأسود</option>
+    <option value="Montserrat">مونتسرات</option>
+    <option value="Mozambique">موزمبيق</option>
+    <option value="Namibia">ناميبيا</option>
+    <option value="Nauru">ناورو</option>
+    <option value="Navassa Island">جزيرة نافاسا</option>
+    <option value="Nepal">نيبال</option>
+    <option value="Nicaragua">نيكاراغوا</option>
+    <option value="Niger">النيجر</option>
+    <option value="Nigeria">نيجيريا</option>
+    <option value="Niue">نيوي</option>
+    <option value="Norway">النرويج</option>
+    <option value="New Caledonia">كاليدونيا الجديدة</option>
+    <option value="New Zealand">نيوزيلندا</option>
+    <option value="Oman">عمان</option>
+    <option value="Uganda">أوغندا</option>
+    <option value="Uzbekistan">أوزبكستان</option>
+    <option value="Pacific Ocean">المحيط الهادئ</option>
+    <option value="Pakistan">باكستان</option>
+    <option value="Panama">بنما</option>
+    <option value="Papua New Guinea">بابوا غينيا الجديدة</option>
+    <option value="Paracel Islands">جزر باراسيل</option>
+    <option value="Paraguay">باراغواي</option>
+    <option value="Netherlands">هولندا</option>
+    <option value="Peru">بيرو</option>
+    <option value="Philippines">الفلبين</option>
+    <option value="Poland">بولندا</option>
+    <option value="French Polynesia">بولينيزيا الفرنسية</option>
+    <option value="Porto Rico">بورتوريكو</option>
+    <option value="Portugal">البرتغال</option>
+    <option value="Qatar">قطر</option>
+    <option value="Central African Republic">جمهورية أفريقيا الوسطى</option>
+    <option value="Democratic Republic of Congo">جمهورية الكونغو الديمقراطية</option>
+    <option value="Dominican Republic">جمهورية الدومينيكان</option>
+    <option value="Czech republic">الجمهورية التشيكية</option>
+    <option value="Romania">رومانيا</option>
+    <option value="United Kingdom">المملكة المتحدة</option>
+    <option value="Russia">روسيا</option>
+    <option value="Rwanda">رواندا</option>
+    <option value="Western Sahara">الصحراء الغربية</option>
+    <option value="Saint Kitts and Nevis">سانت كيتس ونيفيس</option>
+    <option value="Saint Helena">سانت هيلينا</option>
+    <option value="St. LUCIA">سانت لوسيا</option>
+    <option value="San Marino">سان مارينو</option>
+    <option value="Saint Pierre and Miquelon">سان بيير وميكلون</option>
+    <option value="Holy See">الكرسي الرسولي</option>
+    <option value="Saint Vincent and the Grenadines">سانت فنسنت وجزر غرينادين</option>
+    <option value="Salvador">السلفادور</option>
+    <option value="Samoa">ساموا</option>
+    <option value="American Samoa">ساموا الأمريكية</option>
+    <option value="Sao Tome and Principe">ساو تومي وبرينسيب</option>
+    <option value="Senegal">السنغال</option>
+    <option value="Serbia">صربيا</option>
+    <option value="Seychelles">سيشل</option>
+    <option value="Sierra Leone">سيراليون</option>
+    <option value="Singapore">سنغافورة</option>
+    <option value="Slovakia">سلوفاكيا</option>
+    <option value="Slovenia">سلوفينيا</option>
+    <option value="Somalia">الصومال</option>
+    <option value="Sudan">السودان</option>
+    <option value="Southern Ocean">المحيط الجنوبي</option>
+    <option value="Spratly Islands">جزر سبراتلي</option>
+    <option value="Sri Lanka">سيريلانكا</option>
+    <option value="Sweden">السويد</option>
+    <option value="Swiss">سويسرا</option>
+    <option value="Suriname">سورينام</option>
+    <option value="Swaziland">سوازيلاند</option>
+    <option value="Syria">سوريا</option>
+    <option value="Tajikistan">طاجيكستان</option>
+    <option value="Taiwan">تايوان</option>
+    <option value="Tanzania">تنزانيا</option>
+    <option value="Chad">تشاد</option>
+    <option value="French Southern Territories">المناطق الجنوبية الفرنسية</option>
+    <option value="British Indian Ocean Territory">إقليم المحيط الهندي البريطاني</option>
+    <option value="Thailand">تايلاند</option>
+    <option value="East Timor">تيمور الشرقية</option>
+    <option value="Togo">توجو</option>
+    <option value="Tokelau">توكيلاو</option>
+    <option value="Tonga">تونغا</option>
+    <option value="Trinidad and Tobago">ترينيداد وتوباغو</option>
+    <option value="Tunisia">تونس</option>
+    <option value="Turkmenistan">تركمانستان</option>
+    <option value="Turkey">تركيا</option>
+    <option value="Tuvalu">توفالو</option>
+    <option value="Ukraine">أوكرانيا</option>
+    <option value="European Union">الاتحاد الأوروبي</option>
+    <option value="Uruguay">أورغواي</option>
+    <option value="Vanuatu">فانواتو</option>
+    <option value="Venezuela">فنزويلا</option>
+    <option value="Vietnam">فيتنام</option>
+    <option value="Wake Island">جزيرة ويك</option>
+    <option value="Wallis and futuna">والس وفوتونا</option>
+    <option value="West Bank">الضفة الغربية</option>
+    <option value="Yemen">اليمن</option>
+    <option value="Zambia">زامبيا</option>
+    <option value="Zimbabwe">زيمبابوي</option>
+    <option value="Other...">آخر...</option>
+</select> 
+  </div>
+  <div class="mb-3">
+    <label for="State">المدينة</label>
+    <input type="address" class="form-control" name="City" id="City" placeholder="أدخل اسم مدينتك" required>
+</div>
+<div class="mb-3">
+    <label for="pass">ما هو مسقط رأسك في المغرب؟</label>
+    <input type="text" name="cnf-password" class="form-control" id="email" placeholder="أدخل إجابتك" required>
+  </div>
+</div>
+<!-- step three -->
+<div class="step" dir="rtl">
+  <div class="mb-3">
+    <label for="info">إذا كنت تمتلك بالفعل في المغرب، ما نوع الإسكان الذي تمتلكه؟</label>
+            <select id="info" class="form-control browser-default custom-select">
+                <option value="" style="display:none;" selected></option>
+                <option value="شقة">شقة</option>
+                <option value="دوبلكس">دوبلكس</option>
+                <option value="محل تجاري">محل تجاري</option>
+                <option value="إقامة مغلقة">إقامة مغلقة</option>
+                <option value="رياض">رياض</option>
+                <option value="استوديو">استوديو</option>
+                <option value="أرض">أرض</option>
+                <option value="أرض زراعية">أرض زراعية</option>
+                <option value="أرض R + 1"> R + 1 أرض</option>
+                <option value="أرض R + 2"> R + 2 أرض</option>
+                <option value="أرض R + 3"> R + 3 أرض</option>
+                <option value="أرض R + 4"> R + 4 أرض</option>
+                <option value="فيلا">فيلا</option>
+                <option value="آخر">...آخر</option>
+            </select>
+  </div>
+  <div class="mb-3">
+    <label for="investAmount">كم تنوي الاستثمار؟</label>
+    <select id="investAmount" class="form-control browser-default custom-select">
+        <option value="" style="display:none;" selected></option>
+        <option value="أقل من 200,000 درهم">أقل من 200,000 درهم</option>
+        <option value="أقل من 1,000,000 درهم">أقل من 1,000,000 درهم</option>
+        <option value="أكثر من 1,000,000 درهم">أكثر من 1,000,000 درهم</option>
+        <option value="أخرى...">أخرى...</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="attendReason">هل ستحضر إلى معرض جدة 2020؟ إذا كانت الإجابة بنعم، لماذا؟</label>
+    <select id="attendReason" class="form-control browser-default custom-select">
+        <option value="" style="display:none;" selected></option>
+        <option value="شراء عقار">شراء عقار</option>
+        <option value="حضور مؤتمرات">حضور مؤتمرات</option>
+        <option value="فتح حساب بنكي">فتح حساب بنكي</option>
+        <option value="التعرف على الفرص">التعرف على الفرص</option>
+        <option value="أخرى">أخرى...</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="needLoan">هل تحتاج إلى قرض في المغرب؟</label>
+    <select id="needLoan" class="form-control browser-default custom-select">
+        <option value="" style="display:none;" selected></option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="purchasePlan">في حالة شراء عقار، متى تخطط للقيام بذلك؟</label>
+    <select id="purchasePlan" class="form-control browser-default custom-select">
+        <option value="" style="display:none;" selected></option>
+        <option value="فوراً">فوراً</option>
+        <option value="في الستة أشهر القادمة">في الستة أشهر القادمة</option>
+        <option value="في وقت لاحق">في وقت لاحق</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="monthlyPayment">كم ترغب في دفعه شهريًا؟</label>
+    <select id="monthlyPayment" class="form-control browser-default custom-select">
+        <option value="" style="display:none;" selected></option>
+        <option value="من 7000 إلى 10,000 درهم">من 7000 إلى 10,000 درهم</option>
+        <option value="أكثر من 10,000 درهم">أكثر من 10,000 درهم</option>
+    </select>
+</div>
+</div>
+        <!--step four-->
+        <div class="step" dir="rtl">
+          <div class="mb-3">
+              <label for="info">أي منطقة تبحث عنها في المغرب؟</label>
+              <label for="info">المنطقة 1:</label>
+              <select id="info" class="form-control browser-default custom-select">
+                  <option value="" style="display:none;" selected></option>
+                  <option value="أغادير">أغادير</option>
+                  <option value="أغرم">أغرم</option>
+                  <option value="أخنوص">أخنوص</option>
+                  <option value="آقا">آقا</option>
+                  <option value="أربعاء">أربعاء</option>
+                  <option value="أرفود">أرفود</option>
+                  <option value="أسا">أسا</option>
+                  <option value="أصيلة">أصيلة</option>
+                  <option value="آزمور">آزمور</option>
+                  <option value="أزيلال">أزيلال</option>
+                  <option value="بنجرير">بنجرير</option>
+                  <option value="بني ملال">بني ملال</option>
+                  <option value="بن سليمان">بن سليمان</option>
+                  <option value="بركان">بركان</option>
+                  <option value="برشيد">برشيد</option>
+                  <option value="بو عينان">بو عينان</option>
+                  <option value="بو تاجيت">بو تاجيت</option>
+                  <option value="بوعرفة">بوعرفة</option>
+                  <option value="بولمان">بولمان</option>
+                  <option value="برد">برد</option>
+                  <option value="بوزنيقة">بوزنيقة</option>
+                  <option value="الدار البيضاء">الدار البيضاء</option>
+                  <option value="شفشاون">شفشاون</option>
+                  <option value="الداخلة">الداخلة</option>
+                  <option value="دمنات">دمنات</option>
+                  <option value="القلعة السراغنة">القلعة السراغنة</option>
+                  <option value="المنزل بني يازغة">المنزل بني يازغة</option>
+                  <option value="الحاجب">الحاجب</option>
+                  <option value="الجديدة">الجديدة</option>
+                  <option value="الرشيدية">الرشيدية</option>
+                  <option value="الريش">الريش</option>
+                  <option value="الصويرة">الصويرة</option>
+                  <option value="الزاك">الزاك</option>
+                  <option value="فاس">فاس</option>
+                  <option value="فيقيغ">فيقيغ</option>
+                  <option value="فخيب بن صالح">فخيب بن صالح</option>
+                  <option value="كارة">كارة</option>
+                  <option value="كلميم">كلميم</option>
+                  <option value="كرسيف">كرسيف</option>
+                  <option value="خنيفرة">خنيفرة</option>
+                  <option value="خريبكة">خريبكة</option>
+                  <option value="الخميسات">الخميسات</option>
+                  <option value="القنيطرة">القنيطرة</option>
+                  <option value="الخميسة">الخميسة</option>
+                  <option value="الناظور">الناظور</option>
+                  <option value="ورزازات">ورزازات</option>
+                  <option value="واد أمليل">واد أمليل</option>
+                  <option value="واد زم">واد زم</option>
+                  <option value="وزان">وزان</option>
+                  <option value="وجدة">وجدة</option>
+                  <option value="الرباط">الرباط</option>
+                  <option value="ريصاني">ريصاني</option>
+                  <option value="الرماني">الرماني</option>
+                  <option value="آسفي">آسفي</option>
+                  <option value="سال">سال</option>
+                  <option value="صفرو">صفرو</option>
+                  <option value="ستة">ستة</option>
+                  <option value="سيدي بنور">سيدي بنور</option>
+                  <option value="سيدي إفني">سيدي إفني</option>
+                  <option value="سيدي قاسم">سيدي قاسم</option>
+                  <option value="سيدي سليمان">سيدي سليمان</option>
+                  <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
+                  <option value="الصخيرات">الصخيرات</option>
+                  <option value="السمارة">السمارة</option>
+                  <option value="سوق الأربعاء الغرب">سوق الأربعاء الغرب</option>
+                  <option value="تافراوت">تافراوت</option>
+                  <option value="تاهلة">تاهلة</option>
+                  <option value="تاليوين">تاليوين</option>
+                  <option value="تانديت">تانديت</option>
+                  <option value="طنجة">طنجة</option>
+                  <option value="طانطان">طانطان</option>
+                  <option value="تاونات">تاونات</option>
+                  <option value="تاوريرت">تاوريرت</option>
+                  <option value="تارودانت">تارودانت</option>
+                  <option value="طاطا">طاطا</option>
+                  <option value="تازة">تازة</option>
+                  <option value="تمارة">تمارة</option>
+                  <option value="تطوان">تطوان</option>
+                  <option value="تيفلت">تيفلت</option>
+                  <option value="تيسة">تيسة</option>
+                  <option value="تيسوت">تيسوت</option>
+                  <option value="تيزي وسلي">تيزي وسلي</option>
+                  <option value="تزنيت">تزنيت</option>
+                  <option value="تجداد">تجداد</option>
+                  <option value="اليوسفية">اليوسفية</option>
+                  <option value="زاكورة">زاكورة</option>
+                  <option value="زرهون">زرهون</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="info">المنطقة 2:</label>
+              <select id="info" class="form-control browser-default custom-select">
+                  <option value="" style="display:none;" selected></option>
+                  <option value="أغادير">أغادير</option>
+                  <option value="أغرم">أغرم</option>
+                  <option value="أخنوص">أخنوص</option>
+                  <option value="آقا">آقا</option>
+                  <option value="أربعاء">أربعاء</option>
+                  <option value="أرفود">أرفود</option>
+                  <option value="أسا">أسا</option>
+                  <option value="أصيلة">أصيلة</option>
+                  <option value="آزمور">آزمور</option>
+                  <option value="أزيلال">أزيلال</option>
+                  <option value="بنجرير">بنجرير</option>
+                  <option value="بني ملال">بني ملال</option>
+                  <option value="بن سليمان">بن سليمان</option>
+                  <option value="بركان">بركان</option>
+                  <option value="برشيد">برشيد</option>
+                  <option value="بو عينان">بو عينان</option>
+                  <option value="بو تاجيت">بو تاجيت</option>
+                  <option value="بوعرفة">بوعرفة</option>
+                  <option value="بولمان">بولمان</option>
+                  <option value="برد">برد</option>
+                  <option value="بوزنيقة">بوزنيقة</option>
+                  <option value="الدار البيضاء">الدار البيضاء</option>
+                  <option value="شفشاون">شفشاون</option>
+                  <option value="الداخلة">الداخلة</option>
+                  <option value="دمنات">دمنات</option>
+                  <option value="القلعة السراغنة">القلعة السراغنة</option>
+                  <option value="المنزل بني يازغة">المنزل بني يازغة</option>
+                  <option value="الحاجب">الحاجب</option>
+                  <option value="الجديدة">الجديدة</option>
+                  <option value="الرشيدية">الرشيدية</option>
+                  <option value="الريش">الريش</option>
+                  <option value="الصويرة">الصويرة</option>
+                  <option value="الزاك">الزاك</option>
+                  <option value="فاس">فاس</option>
+                  <option value="فيقيغ">فيقيغ</option>
+                  <option value="فخيب بن صالح">فخيب بن صالح</option>
+                  <option value="كارة">كارة</option>
+                  <option value="كلميم">كلميم</option>
+                  <option value="كرسيف">كرسيف</option>
+                  <option value="خنيفرة">خنيفرة</option>
+                  <option value="خريبكة">خريبكة</option>
+                  <option value="الخميسات">الخميسات</option>
+                  <option value="القنيطرة">القنيطرة</option>
+                  <option value="الخميسة">الخميسة</option>
+                  <option value="الناظور">الناظور</option>
+                  <option value="ورزازات">ورزازات</option>
+                  <option value="واد أمليل">واد أمليل</option>
+                  <option value="واد زم">واد زم</option>
+                  <option value="وزان">وزان</option>
+                  <option value="وجدة">وجدة</option>
+                  <option value="الرباط">الرباط</option>
+                  <option value="ريصاني">ريصاني</option>
+                  <option value="الرماني">الرماني</option>
+                  <option value="آسفي">آسفي</option>
+                  <option value="سال">سال</option>
+                  <option value="صفرو">صفرو</option>
+                  <option value="ستة">ستة</option>
+                  <option value="سيدي بنور">سيدي بنور</option>
+                  <option value="سيدي إفني">سيدي إفني</option>
+                  <option value="سيدي قاسم">سيدي قاسم</option>
+                  <option value="سيدي سليمان">سيدي سليمان</option>
+                  <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
+                  <option value="الصخيرات">الصخيرات</option>
+                  <option value="السمارة">السمارة</option>
+                  <option value="سوق الأربعاء الغرب">سوق الأربعاء الغرب</option>
+                  <option value="تافراوت">تافراوت</option>
+                  <option value="تاهلة">تاهلة</option>
+                  <option value="تاليوين">تاليوين</option>
+                  <option value="تانديت">تانديت</option>
+                  <option value="طنجة">طنجة</option>
+                  <option value="طانطان">طانطان</option>
+                  <option value="تاونات">تاونات</option>
+                  <option value="تاوريرت">تاوريرت</option>
+                  <option value="تارودانت">تارودانت</option>
+                  <option value="طاطا">طاطا</option>
+                  <option value="تازة">تازة</option>
+                  <option value="تمارة">تمارة</option>
+                  <option value="تطوان">تطوان</option>
+                  <option value="تيفلت">تيفلت</option>
+                  <option value="تيسة">تيسة</option>
+                  <option value="تيسوت">تيسوت</option>
+                  <option value="تيزي وسلي">تيزي وسلي</option>
+                  <option value="تزنيت">تزنيت</option>
+                  <option value="تجداد">تجداد</option>
+                  <option value="اليوسفية">اليوسفية</option>
+                  <option value="زاكورة">زاكورة</option>
+                  <option value="زرهون">زرهون</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="info">المنطقة 3:</label>
+              <select id="info" class="form-control browser-default custom-select">
+                  <option value="" style="display:none;" selected></option>
+                  <option value="أغادير">أغادير</option>
+                  <option value="أغرم">أغرم</option>
+                  <option value="أخنوص">أخنوص</option>
+                  <option value="آقا">آقا</option>
+                  <option value="أربعاء">أربعاء</option>
+                  <option value="أرفود">أرفود</option>
+                  <option value="أسا">أسا</option>
+                  <option value="أصيلة">أصيلة</option>
+                  <option value="آزمور">آزمور</option>
+                  <option value="أزيلال">أزيلال</option>
+                  <option value="بنجرير">بنجرير</option>
+                  <option value="بني ملال">بني ملال</option>
+                  <option value="بن سليمان">بن سليمان</option>
+                  <option value="بركان">بركان</option>
+                  <option value="برشيد">برشيد</option>
+                  <option value="بو عينان">بو عينان</option>
+                  <option value="بو تاجيت">بو تاجيت</option>
+                  <option value="بوعرفة">بوعرفة</option>
+                  <option value="بولمان">بولمان</option>
+                  <option value="برد">برد</option>
+                  <option value="بوزنيقة">بوزنيقة</option>
+                  <option value="الدار البيضاء">الدار البيضاء</option>
+                  <option value="شفشاون">شفشاون</option>
+                  <option value="الداخلة">الداخلة</option>
+                  <option value="دمنات">دمنات</option>
+                  <option value="القلعة السراغنة">القلعة السراغنة</option>
+                  <option value="المنزل بني يازغة">المنزل بني يازغة</option>
+                  <option value="الحاجب">الحاجب</option>
+                  <option value="الجديدة">الجديدة</option>
+                  <option value="الرشيدية">الرشيدية</option>
+                  <option value="الريش">الريش</option>
+                  <option value="الصويرة">الصويرة</option>
+                  <option value="الزاك">الزاك</option>
+                  <option value="فاس">فاس</option>
+                  <option value="فيقيغ">فيقيغ</option>
+                  <option value="فخيب بن صالح">فخيب بن صالح</option>
+                  <option value="كارة">كارة</option>
+                  <option value="كلميم">كلميم</option>
+                  <option value="كرسيف">كرسيف</option>
+                  <option value="خنيفرة">خنيفرة</option>
+                  <option value="خريبكة">خريبكة</option>
+                  <option value="الخميسات">الخميسات</option>
+                  <option value="القنيطرة">القنيطرة</option>
+                  <option value="الخميسة">الخميسة</option>
+                  <option value="الناظور">الناظور</option>
+                  <option value="ورزازات">ورزازات</option>
+                  <option value="واد أمليل">واد أمليل</option>
+                  <option value="واد زم">واد زم</option>
+                  <option value="وزان">وزان</option>
+                  <option value="وجدة">وجدة</option>
+                  <option value="الرباط">الرباط</option>
+                  <option value="ريصاني">ريصاني</option>
+                  <option value="الرماني">الرماني</option>
+                  <option value="آسفي">آسفي</option>
+                  <option value="سال">سال</option>
+                  <option value="صفرو">صفرو</option>
+                  <option value="ستة">ستة</option>
+                  <option value="سيدي بنور">سيدي بنور</option>
+                  <option value="سيدي إفني">سيدي إفني</option>
+                  <option value="سيدي قاسم">سيدي قاسم</option>
+                  <option value="سيدي سليمان">سيدي سليمان</option>
+                  <option value="سيدي يحيى الغرب">سيدي يحيى الغرب</option>
+                  <option value="الصخيرات">الصخيرات</option>
+                  <option value="السمارة">السمارة</option>
+                  <option value="سوق الأربعاء الغرب">سوق الأربعاء الغرب</option>
+                  <option value="تافراوت">تافراوت</option>
+                  <option value="تاهلة">تاهلة</option>
+                  <option value="تاليوين">تاليوين</option>
+                  <option value="تانديت">تانديت</option>
+                  <option value="طنجة">طنجة</option>
+                  <option value="طانطان">طانطان</option>
+                  <option value="تاونات">تاونات</option>
+                  <option value="تاوريرت">تاوريرت</option>
+                  <option value="تارودانت">تارودانت</option>
+                  <option value="طاطا">طاطا</option>
+                  <option value="تازة">تازة</option>
+                  <option value="تمارة">تمارة</option>
+                  <option value="تطوان">تطوان</option>
+                  <option value="تيفلت">تيفلت</option>
+                  <option value="تيسة">تيسة</option>
+                  <option value="تيسوت">تيسوت</option>
+                  <option value="تيزي وسلي">تيزي وسلي</option>
+                  <option value="تزنيت">تزنيت</option>
+                  <option value="تجداد">تجداد</option>
+                  <option value="اليوسفية">اليوسفية</option>
+                  <option value="زاكورة">زاكورة</option>
+                  <option value="زرهون">زرهون</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="marocExpoSource">كيف علمت عن معرض المغرب، جدة 2020؟</label>
+            <select id="marocExpoSource" class="form-control browser-default custom-select">
+                <option value="" style="display:none;" selected></option>
+                <option value="عبر الراديو">عبر الراديو</option>
+                <option value="عبر الطباعة">عبر الطباعة</option>
+                <option value="عبر التلفزيون">عبر التلفزيون</option>
+                <option value="عبر الإنترنت">عبر الإنترنت</option>
+                <option value="عبر الرسائل القصيرة">عبر الرسائل القصيرة</option>
+                <option value="عبر الهاتف">عبر الهاتف</option>
+                <option value="عبر العائلة والأصدقاء">عبر العائلة والأصدقاء</option>
+                <option value="أخرى...">أخرى...</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="accommodationType">ما نوع الإقامة التي ترغب في شرائها؟</label>
+            <select id="accommodationType" class="form-control browser-default custom-select">
+                <option value="" style="display:none;" selected></option>
+                <option value="شقة">شقة</option>
+                <option value="دوبلكس">دوبلكس</option>
+                <option value="محل تجاري">محل تجاري</option>
+                <option value="إقامة مغلقة">إقامة مغلقة</option>
+                <option value="رياض">رياض</option>
+                <option value="استوديو">استوديو</option>
+                <option value="أرض">أرض</option>
+                <option value="أرض زراعية">أرض زراعية</option>
+                <option value="أرض R + 1"> R + 1 أرض</option>
+                <option value="أرض R + 2"> R + 2 أرض</option>
+                <option value="أرض R + 3"> R + 3 أرض</option>
+                <option value="أرض R + 4"> R + 4 أرض</option>
+                <option value="فيلا">فيلا</option>
+                <option value="آخر">...آخر</option>
+            </select>
+        </div>        
+        </div>
+    
+        <!-- start previous / next buttons -->
+        <div class="form-footer d-flex">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(+1)">Next</button>
+        </div>
+        <!-- end previous / next buttons -->
+    </form>
+  <!--registration form end-->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-secondary p-5">
+      <div class="row g-5" dir="rtl">
+          <div class="col-12 text-center">
+              <h1 class="display-5 mb-4">ابق على اطلاع</h1>
+              <form class="mx-auto" style="max-width: 600px;">
+                  <div class="input-group">
+                      <input type="text" class="form-control border-white p-3" placeholder="بريدك الإلكتروني">
+                      <button class="btn btn-dark px-4">إشتراك</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid bg-dark text-secondary p-5">
+      <div class="row g-5" dir="rtl">
+          <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">روابط سريعة</h3>
+              <div class="d-flex flex-column justify-content-start">
+                  <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-left text-primary me-2"></i>الصفحة الرئيسية</a>
+                  <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-left text-primary me-2"></i>معلومات حولنا</a>
+                  <a class="text-secondary mb-2" href="events.html"><i class="bi bi-arrow-left text-primary me-2"></i>أحدث المعارض</a>
+                  <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-left text-primary me-2"></i>تواصل معنا</a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">روابط شعبية</h3>
+              <div class="d-flex flex-column justify-content-start">
+                  <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-left text-primary me-2"></i>الصفحة الرئيسية</a>
+                  <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-left text-primary me-2"></i>معلومات حولنا</a>
+                  <a class="text-secondary mb-2" href="events.html"><i class="bi bi-arrow-left text-primary me-2"></i>أحدث المعارض</a>
+                  <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-left text-primary me-2"></i>تواصل معنا</a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">ابقى على تواصل</h3>
+              <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>12 شارع أم الربيع، شقة 3 أكدال، الرباط، المغرب</p>
+              <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@marocexpo.org</p>
+              <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+212(5) 37 68 36 14</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">تابعنا</h3>
+              <div class="d-flex">
+                  <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                  <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/mperoadshow/?locale=he_IL"><i class="fab fa-facebook-f fw-normal"></i></a>
+                  <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                  <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+              </div>                
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;" dir="rtl">
+      <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">معرض العقارات بالمغرب</a>. كل الحقوق محفوظة</p>
+  </div>
+  <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.js"></script>
+    <script>var currentTab = 0; // Current tab is set to be the first tab (0)
+      showTab(currentTab); // Display the current tab
+      
+      function showTab(n) {
+        // This function will display the specified tab of the form...
+        var x = document.getElementsByClassName("step");
+        x[n].style.display = "block";
+        //... and fix the Previous/Next buttons:
+        if (n == 0) {
+          document.getElementById("prevBtn").style.display = "none";
+        } else {
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)) {
+          document.getElementById("nextBtn").innerHTML = "Submit";
+        } else {
+          document.getElementById("nextBtn").innerHTML = "Next";
+        }
+        //... and run a function that will display the correct step indicator:
+        fixStepIndicator(n)
+      }
+      
+      function nextPrev(n) {
+        // This function will figure out which tab to display
+        var x = document.getElementsByClassName("step");
+        // Exit the function if any field in the current tab is invalid:
+        if (n == 1 && !validateForm()) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
+          // ... the form gets submitted:
+          document.getElementById("signUpForm").submit();
+          return false;
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+      }
+      
+      function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("step");
+    y = x[currentTab].querySelectorAll("input, select");
+    // A loop that checks every input field and select in the current tab:
+    for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+            // Add an "invalid" class to the field:
+            y[i].classList.add("invalid");
+            // And set the current valid status to false
+            valid = false;
+        }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+        document.getElementsByClassName("stepIndicator")[currentTab].classList.add("finish");
+    }
+    return valid; // Return the valid status
+}
+
+      
+      function fixStepIndicator(n) {
+        // This function removes the "active" class of all steps...
+        var i, x = document.getElementsByClassName("stepIndicator");
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(" active", "");
+        }
+        //... and adds the "active" class on the current step:
+        x[n].className += " active";
+      }</script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
