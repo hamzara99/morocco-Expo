@@ -162,7 +162,7 @@ h6,
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     min-height: 200px;
 }
 
@@ -195,7 +195,7 @@ label {
     color: #666;
 }
 body {
-  background: grey;
+  background: #f1f1f1
 }
 .box8{
   box-shadow: 0px 0px 5px 1px #999;
@@ -210,6 +210,9 @@ body {
   }
   body{ 
     font-family: 'Open Sans', sans-serif; 
+
+/* Sign up Form*/
+
 }        
 #signUpForm {
     max-width: 800px;
@@ -314,4 +317,63 @@ border: 3px solid #ecf5f4;
 input.invalid, select.invalid {
     border: 1px solid red;
 }
-/*partner Section
+/*dropdown list*/
+.custom-font {
+    font-size: 20px;
+    color: #152440;
+    font-family: 'Barlow', sans-serif;
+}
+.custom-font :hover{
+    cursor: pointer;
+    color: #0D98BA;
+}
+.custom-dropdown .dropdown-menu {
+    border-radius: 1;
+    margin-top: -5px;
+    animation: fadeInDown 1s;
+    border: 1px solid transparent;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+}
+/*Event Details Section*/
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
